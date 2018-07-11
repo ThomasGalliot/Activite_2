@@ -6,17 +6,17 @@ alert("Bienvenue dans le gestionaire des contacts !");
 while (option !== "0"){
     option = prompt("choisisez une option:\n1: Liste des contact\n2: Ajouté un contact\n0: quitter", "Entrer votre réponse ici");
 
-    if (option < 0 || option > 2)
+    if (option < "0" || option > "2")
         alert("Cette option n'éxiste pas!");
 
     else if (option === "1")
         alert("Voici la liste de tout vos contact:\n" + formulaire);
 
     else if(option === "2") {
-        var prenom = prompt("entrer le prénom du nouveau contact:");
+        var prenom = prompt("entrer le prénom du nouveau contact:", "prénom");
         formulaire.push("\nprénom: " + prenom);
 
-        var nom = prompt("entrer le nom de votre nouveau contact:");
+        var nom = prompt("entrer le nom de votre nouveau contact:", "nom");
         formulaire.push(" nom: " + nom);
 
         alert("le contact a bien été ajouté");
