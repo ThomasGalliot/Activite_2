@@ -4,7 +4,7 @@ var option = "";
 alert("Bienvenue dans le gestionaire des contacts !");
 
 while (option !== "0"){
-    option = prompt("choisisez une option:\n1: Liste des contact\n2: Ajouté un contact\n0: quitter");
+    option = prompt("choisisez une option:\n1: Liste des contact\n2: Ajouté un contact\n0: quitter", "Entrer votre réponse ici");
 
     if (option < 0 || option > 2)
         alert("Cette option n'éxiste pas!");
