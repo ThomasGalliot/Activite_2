@@ -4,7 +4,6 @@ Activité : gestion des contacts
 
 // TODO : complétez le programme
 var formulaire = ["prénom: Carole", " nom: Lévisse", "\nprénom: Mélodie", " nom: Nelsonne"];
-
 var option = "";
 
 console.log("Bienvenue dans le gestionaire des contacts !")
@@ -24,8 +23,8 @@ while (option !== "0"){
 
         var nom = prompt("entré le nom de votre nouveau contact:");
         formulaire.push(" nom: " + nom);
+        
         console.log("le contact a bien été ajouté");
         alert("le contact a bien été ajouté"); 
     }
-
 }
