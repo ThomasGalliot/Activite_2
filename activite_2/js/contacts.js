@@ -6,15 +6,12 @@ Activité : gestion des contacts
 var formulaire = ["prénom: Carole", " nom: Lévisse", "\nprénom: Mélodie", " nom: Nelsonne"];
 var option = "";
 
-console.log("Bienvenue dans le gestionaire des contacts !")
-alert("Bienvenue dans le gestionaire des contacts !")
+alert("Bienvenue dans le gestionaire des contacts !");
 
 while (option !== "0"){
-    console.log("1: Liste des contact\n2: Ajouté un contact\n0: quitter\n")
-    option = prompt("choisisez une option:\n1: Liste des contact\n2: Ajouté un contact\n0: quitter")
+    option = prompt("choisisez une option:\n1: Liste des contact\n2: Ajouté un contact\n0: quitter");
     
     if (option === "1") {
-        console.log("Voici la liste de tout vos contact:\n" + formulaire);
         alert("Voici la liste de tout vos contact:\n" + formulaire); 
     }
     else if(option === "2") {
@@ -23,8 +20,7 @@ while (option !== "0"){
 
         var nom = prompt("entré le nom de votre nouveau contact:");
         formulaire.push(" nom: " + nom);
-        
-        console.log("le contact a bien été ajouté");
+
         alert("le contact a bien été ajouté"); 
     }
 }
