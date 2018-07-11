@@ -22,7 +22,7 @@ while (option !== "0"){
         var prenom = prompt("entrer le prénom du nouveau contact:");
         formulaire.push("\nprénom: " + prenom);
 
-        var nom = prompt("entré le nom de votre nouveau contact:");
+        var nom = prompt("entrer le nom de votre nouveau contact:");
         formulaire.push(" nom: " + nom);
 
         alert("le contact a bien été ajouté"); 
