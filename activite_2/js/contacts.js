@@ -1,4 +1,4 @@
-var formulaire = ["prénom: Carole", " nom: Lévisse", "\nprénom: Mélodie", " nom: Nelsonne"];
+var contact = ["Carole Lévisse", "Mélodie Nelsonne"];
 var option = "";
 
 alert("Bienvenue dans le gestionaire des contacts !");
@@ -10,14 +10,13 @@ while (option !== "0"){
         alert("Cette option n'éxiste pas!");
 
     else if (option === "1")
-        alert("Voici la liste de tout vos contact:\n" + formulaire);
+        alert("Voici la liste de tout vos contact:\n" + contact.join("\n"));
 
     else if(option === "2") {
         var prenom = prompt("entrer le prénom du nouveau contact:", "prénom");
-        formulaire.push("\nprénom: " + prenom);
-
         var nom = prompt("entrer le nom de votre nouveau contact:", "nom");
-        formulaire.push(" nom: " + nom);
+
+        contact.push( prenom + " " + nom);
 
         alert("le contact a bien été ajouté");
     }
